@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default function Home() {
   return <div className="max-w-[75rem] mx-auto pt-40 px-6 flex flex-col md:flex-row justify-between flex-wrap">
@@ -11,14 +12,16 @@ export default function Home() {
             Welcome to my safe<img className="inline-block w-9 h-9" alt="skull" src="/skull.png"/>place.
         </p>
         <div className="flex flex-col mt-6">
-            <button
-                className="mx-auto flex items-center justify-center text-white bg-[#47474A19] p-4 w-80 h-16
+            <Link href="/about">
+                <button
+                    className="mx-auto flex items-center justify-center text-white bg-[#47474A19] p-4 w-80 h-16
         font-bold rounded-lg hover:bg-[#47474A33] hover:text-[#0ce877] transition-all duration-100">
-                <span className="mx-2">Read More (lol)</span>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
-                    <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
-                </svg>
-            </button>
+                    <span className="mx-2">Read More</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
+                        <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
+                    </svg>
+                </button>
+            </Link>
             <a href="https://github.com/TheOfficialLOE" target="_blank" rel="noreferrer"
                className="mx-auto flex items-center justify-center text-white my-6 p-4 h-16 w-80
           font-bold border border-[#15151a] rounded-lg hover:border-[#353540] hover:text-[#0ce877] transition-all duration-100">
