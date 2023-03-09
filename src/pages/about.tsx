@@ -16,7 +16,7 @@ const About = () => {
             <p className="text-white text-lg">
                 Currently Listening to <span className="text-[#0ce877] underline">
                     <a href="https://open.spotify.com/track/1fLlRApgzxWweF1JTf8yM5" target="_blank" rel="noreferrer">Linkin Park, Given Up</a>
-                </span> (I'm gonna regret it).
+                </span> (I&apos;m gonna regret it).
             </p>
             <p className="text-white text-xl mt-8 text-clip">
                 I began my programming journey in early 2018 by learning HTML. However, I soon moved on to Java for
